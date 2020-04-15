@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"name": "Appsody: Attach node debugger",
+				"type": "node",
+				"request": "attach",
+				"port": 9229,
+				"remoteRoot": "/project/user-app",
+				"localRoot": "${workspaceFolder}",
+				"protocol": "inspector"
+			},
+			{
+				"type": "node",
+				"name": "Debug appsody_sample_nodejs-express",
+				"request": "attach",
+				"address": "127.0.0.1",
+				"localRoot": "/Users/ishani/Desktop/CP4A_Demo/appsody_sample_nodejs-express",
+				"remoteRoot": "/project/user-app",
+				"restart": true
+			}
+		]
+	}
+}
